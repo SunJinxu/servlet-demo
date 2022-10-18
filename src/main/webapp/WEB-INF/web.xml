@@ -1,0 +1,252 @@
+<web-app
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+						http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+        id="WebApp_ID" version="4.0">
+  <display-name>Archetype Created Web Application</display-name>
+
+  <!--全局参数-->
+  <context-param>
+    <param-name>param-name</param-name>
+    <param-value>param-value</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>downloadPath</param-name>
+    <param-value>/download/</param-value>
+  </context-param>
+
+  <!--servlet名称与类对应-->
+  <servlet>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyForwardRevServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyForwardRevServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+  <servlet-name>MyForwardSendServlet</servlet-name>
+  <servlet-class>io.sunjinxu.servlet.MyForwardSendServlet</servlet-class>
+</servlet>
+
+  <servlet>
+    <servlet-name>MyFormServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyFormServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyJumpServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyJumpServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyFileDownloadServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyFileDownloadServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyRedirectServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyRedirectServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyReferServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyReferServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyLoginServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyLoginServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyHiddenServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyHiddenServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MySessionSetServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MySessionSetServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MySessionGetServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MySessionGetServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyBookShelfServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyBookShelfServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyCookieServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyCookieServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyGzipServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyGzipServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyImageServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyImageServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyBookDetailServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyBookDetailServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyHttpServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyHttpServlet</servlet-class>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>SunJinxu</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyRequestAndResponseServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyRequestAndResponseServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyHttpServletRev</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyHttpServletRev</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyLoadOnStartUpServlet</servlet-name>
+    <servlet-class>io.sunjinxu.servlet.MyLoadOnStartUpServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <!--servlet名称与路径对应-->
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyFormServlet</servlet-name>
+    <url-pattern>/MyFormServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyBookShelfServlet</servlet-name>
+    <url-pattern>/MyBookShelfServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyBookDetailServlet</servlet-name>
+    <url-pattern>/MyBookDetailServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyCookieServlet</servlet-name>
+    <url-pattern>/MyCookieServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyReferServlet</servlet-name>
+    <url-pattern>/MyReferServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyFileDownloadServlet</servlet-name>
+    <url-pattern>/MyFileDownloadServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyRequestAndResponseServlet</servlet-name>
+    <url-pattern>/MyRequestAndResponseServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyGzipServlet</servlet-name>
+    <url-pattern>/MyGzipServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyHttpServlet</servlet-name>
+    <url-pattern>/MyHttpServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyLoginServlet</servlet-name>
+    <url-pattern>/MyLoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyHiddenServlet</servlet-name>
+    <url-pattern>/MyHiddenServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MySessionSetServlet</servlet-name>
+    <url-pattern>/MySessionSetServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MySessionGetServlet</servlet-name>
+    <url-pattern>/MySessionGetServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyForwardRevServlet</servlet-name>
+    <url-pattern>/MyForwardRevServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyForwardSendServlet</servlet-name>
+    <url-pattern>/MyForwardSendServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyJumpServlet</servlet-name>
+    <url-pattern>/MyJumpServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyRedirectServlet</servlet-name>
+    <url-pattern>/MyRedirectServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>MyImageServlet</servlet-name>
+    <url-pattern>/MyImageServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyHttpServletRev</servlet-name>
+    <url-pattern>/MyHttpServletRev</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/ServletDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>*.java</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyLoadOnStartUpServlet</servlet-name>
+    <url-pattern>/MyLoadOnStartUpServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
+
+
+
+
+
+
