@@ -3,48 +3,29 @@
 ## *目录结构*
 
 **servlet——demo**
-
+```
 |
-
 |——— src
-
 |			 |
-
 |			 |——— java(io.sunjinxu)
-
-|			 |				|
-
-|		 	|				|——— entity(实体类)
-
-|		 	|				|
-
-|		 	|				|——— servlet(servlet类)
-
-|		 	|
-
-|		 	|——— webapp
-
-|							    |
-
-|			 				   |——— download(servlet下载文件夹)
-
-|		 					   |
-
-|		 	 			  	|——— form(servlet表单文件夹)
-
-|		 	 				  |
-
-|		 	 			  	|——— login(servlet登陆文件夹)		
-
-|		 	 				  |
-
-|		 	 			  	|——— WEB——INF(配置文件文件夹)	 	 
-
+|			 |	 |
+|		 	 |	 |——— entity(实体类)
+|		 	 |	 |
+|		 	 |	 |——— servlet(servlet类)
+|		 	 |
+|		 	 |——— webapp
+|			     |
+|			     |——— download(servlet下载文件夹)
+|		 	     |
+|		 	     |——— form(servlet表单文件夹)
+|		 	     |
+|		 	     |——— login(servlet登陆文件夹)
+|		 	     |
+|		 	     |——— WEB——INF(配置文件文件夹)
 |
-
 |——— pom.xml
 |——— README.md
-
+```
 
 
 ## **一 Servlet是什么**
