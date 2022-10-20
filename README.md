@@ -1,9 +1,8 @@
 # **Servlet**
 
 ## *目录结构*
-
-**servlet——demo**
 ```
+**servlet——demo**
 |
 |——— src
 |			 |
